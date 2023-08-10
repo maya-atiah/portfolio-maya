@@ -1,0 +1,22 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:3rem 6rem 0 6rem;
+    background-color: white !important;
+        /* box-shadow: rgba(0, 0, 0, 0.477) 0px 1px 4px; */
+   
+}
+
+@media screen and (max-width:1206px) {
+    .cardContainer {
+            margin: 2rem 3rem;
+           
+        }
+}
+@media screen and (max-width:844px) {
+    .cardContainer {
+        margin: 0.2rem 0.1rem;
+
+    }
+}
