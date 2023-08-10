@@ -61,7 +61,7 @@ const ProjectsSection = ({ projectsData }) => {
                     <>
                     <div key={item.id} className='projects-gallery-mobile'>
                         
-                        <Image src={item.image} alt={item.title} width={340} height={170} onClick={() => openFullscreenImage(item.image)} />
+                        <img src={item.image} alt={item.title} className='projects-image-mobile' width={340} height={170} onClick={() => openFullscreenImage(item.image)} />
                         <h2>{item.title}</h2>
                         <p>{item.details}</p>
                         <a className='view-details-projects' onClick={() => showDetailsHandler(item.id)}>View Details</a>

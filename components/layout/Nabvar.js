@@ -40,22 +40,18 @@ const Navbar = () => {
 
         <div className={Styles.mobile}>
           {open ? closeIcon : hamburgerIcon}
-          <div className={Styles.navbarMonileContainer}>
-            {open && (
+          
+          <div className={`${Styles.navbarMobileContainer} ${open ? Styles.open : ""}`}>
+
+           
               <div className={Styles.navlinkMobile}>
-                <Link className={Styles.navlinkMobilefont} href='/' onClick={handleNavLinkClick}> <motion.div initial={animatedForm}
-                  animate={animatedTo}>Home</motion.div></Link>
-                <Link className={Styles.navlinkMobilefont} href={`/?section=about`} onClick={handleNavLinkClick}><motion.div initial={animatedForm}
-                  animate={animatedTo}>About</motion.div></Link>
-                <Link className={Styles.navlinkMobilefont} href={`/?section=skills`} onClick={handleNavLinkClick}><motion.div initial={animatedForm}
-                  animate={animatedTo}>Experience</motion.div></Link>
-                <Link className={Styles.navlinkMobilefont} href={`/?section=projects`} onClick={handleNavLinkClick}><motion.div initial={animatedForm}
-                  animate={animatedTo}>Skills</motion.div></Link>
-                <Link className={Styles.navlinkMobilefont} href={`/?section=experience`} onClick={handleNavLinkClick}><motion.div initial={animatedForm}
-                  animate={animatedTo}>Projects</motion.div></Link>
-                <Link className={Styles.navlinkMobilefont} href={`/?section=contact`} onClick={handleNavLinkClick}><motion.div initial={animatedForm}
-                  animate={animatedTo}>Contact</motion.div></Link>
-              </div>)}
+                <Link className={Styles.navlinkMobilefont} href='/' onClick={handleNavLinkClick}> Home</Link>
+                <Link className={Styles.navlinkMobilefont} href={`/?section=about`} onClick={handleNavLinkClick}>About</Link>
+                <Link className={Styles.navlinkMobilefont} href={`/?section=experience`} onClick={handleNavLinkClick}>Experience</Link>
+                <Link className={Styles.navlinkMobilefont} href={`/?section=skills`} onClick={handleNavLinkClick}>Skills</Link>
+                <Link className={Styles.navlinkMobilefont} href={`/?section=projects`} onClick={handleNavLinkClick}>Projects</Link>
+                <Link className={Styles.navlinkMobilefont} href={`/?section=contact`} onClick={handleNavLinkClick}>Contact</Link>
+              </div>
           </div>
 
         </div>
