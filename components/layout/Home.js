@@ -5,13 +5,13 @@ const Home = () => {
 
 
   
-    const [fileUrl, setFileUrl] = useState('/cv/Maya-Atiah-CV.pdf');
+    const [fileUrl, setFileUrl] = useState('/cv/Maya-Atiah-CV_FullStackWebDeveloper.pdf');
 
     const saveFile = async () => {
         try {
             const response = await fetch(fileUrl);
             const fileBlob = await response.blob();
-            saveAs(fileBlob, "MayaAtiahCV.pdf");
+            saveAs(fileBlob, "Maya-Atiah-CV_FullStackDeveloper.pdf");
         } catch (error) {
             console.error('Error downloading the file:', error);
         }

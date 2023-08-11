@@ -81,7 +81,7 @@ const ContactUs = () => {
                         <div> <FaPhone className='icon-cont phone' /><a className='phone' href="tel:+09613096433">+09613096433</a></div>
                         <div>
                              <a href='https://github.com/maya-atiah' target='_blank'><FaGithub className='icon-cont' /></a>
-                              <a> <FaInstagram className='icon-cont' /></a>
+                            <a href='https://instagram.com/maya_atiah?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D' target='_blank'> <FaInstagram className='icon-cont' /></a>
                             <a href="mailto:maya.atiah.99@gmail.com" target='_blank' ><FaEnvelope className='icon-cont'/></a>
                             <a href='https://www.linkedin.com/in/maya-atiah' target='_blank'><FaLinkedinIn className='icon-cont'/></a></div>
                     </div>

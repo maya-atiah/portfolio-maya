@@ -52,6 +52,25 @@ const projectsData = [
     moreDetails: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat lorem eget ultrices rhoncus. In quis tristique elit. Fusce sed ultricies felis. Vivamus nisl sapien, finibus vitae varius in, varius vel est. In eu dapibus arcu. Aenean nec aliquet orci, vel scelerisque justo. Aenean dui tortor, pulvinar vel eros vitae, eleifend mollis elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla dolor magna, ultrices vel sollicitudin at, ultrices ac arcu.'
 
   },
+  {
+    id: '5',
+    title: 'Machghalna',
+    details: 'Atlier website built with Wordpress',
+    image: '/machghlnahome.png',
+    imageArray: ['/machghlnaabout.png', '/categories.png', '/contactmachghaalna.png'],
+    deployed: 'https://group12.codi-wordpress.com/b09-group12/',
+    moreDetails: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat lorem eget ultrices rhoncus. In quis tristique elit. Fusce sed ultricies felis. Vivamus nisl sapien, finibus vitae varius in, varius vel est. In eu dapibus arcu. Aenean nec aliquet orci, vel scelerisque justo. Aenean dui tortor, pulvinar vel eros vitae, eleifend mollis elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla dolor magna, ultrices vel sollicitudin at, ultrices ac arcu.'
+
+  },
+  {
+    id: '6',
+    title: 'My Portfolio',
+    details: 'Portfolio built with Nextjs',
+    image: '/homePortfolio.png',
+    imageArray: ['/experienceportfolio.png', '/projectsportfolio.png', '/singlepageportfolio.png'],
+    moreDetails: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat lorem eget ultrices rhoncus. In quis tristique elit. Fusce sed ultricies felis. Vivamus nisl sapien, finibus vitae varius in, varius vel est. In eu dapibus arcu. Aenean nec aliquet orci, vel scelerisque justo. Aenean dui tortor, pulvinar vel eros vitae, eleifend mollis elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla dolor magna, ultrices vel sollicitudin at, ultrices ac arcu.'
+
+  },
 ];
 const HomePage = (props) => {
   const router = useRouter();
