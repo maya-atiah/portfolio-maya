@@ -29,7 +29,7 @@ const Home = () => {
               <div> Maya Atiah</div>
               <div>  I'm a <span>Full Stack Web Developer </span>based in Lebanon. I specialize in turning ideas into fully functional web applications that not only look stunning but also deliver exceptional performance and user satisfaction</div>
               <button className="cv" onClick={saveFile}>
-                  Download File
+                  Download CV
               </button> 
           </div>
       </div>
