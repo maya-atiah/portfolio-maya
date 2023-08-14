@@ -1142,6 +1142,10 @@ display: none;
     height: 150px;
   }
 
+    .content-image {
+      width: 300px;
+        height: 150px;
+    }
   .singleproject-details {
     gap: 0rem;
     padding: 0rem;
