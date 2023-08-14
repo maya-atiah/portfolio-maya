@@ -23,17 +23,14 @@ const ProjectDetails = (props) => {
         <span >{props.data.details}</span>
       </div>
       <div className='singleproject-details'>
-        <div >
-          <img src={props.data.image} alt={props.image}  className='single-image-i' onClick={() => openFullscreenImage(props.data.image)} />
-          {
-            fullscreenImage && (
-              <div className="fullscreen-overlay" onClick={closeFullscreenImage}>
-                <div className="fullscreen-image">
-                  <img src={fullscreenImage} alt='e-commerce' />
-                </div>
-              </div>
-            )
-          }
+        
+        <div className='IMAGE-CONTAINER' >
+          <img src={props.data.image} alt={props.image} className='single-image-i' onClick={() => openFullscreenImage(props.data.image)} />
+          <div className='content-image'>
+            <p>            {props.data.deployed ? <a href={props.data.deployed} target="_blank">Deployed Link</a> : <a href={props.data.videoDemo} target="_blank">Deployed Link</a>}</p>
+
+          </div>
+        
         </div>
         <div> <p className='singleproject-details-p'>{props.data.moreDetails}</p>
           <div className='links-single'>

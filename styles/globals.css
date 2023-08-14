@@ -15,8 +15,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 8rem;
-  justify-content: center;
+  padding: 6rem;
+  justify-content:center;
   gap: 10rem;
   align-items: center;
 }
@@ -106,11 +106,8 @@ body {
 }
 
 .image-container {
-  /* box-shadow: rgba(0, 0, 0, 0.477) 0px 1px 4px; */
   padding: 0.5rem 5rem;
   border-radius: 25px;
-  /* filter: opacity(30%); */
-  height: 5rem;
   margin: 3px;
   object-fit: contain;
 }
@@ -282,6 +279,7 @@ li {
   border: none;
   /* width: 1px; */
   cursor: pointer;
+  border: 1px solid #DBDBDB;
 }
 
 .button:hover::before {
@@ -292,7 +290,8 @@ li {
 .button:hover {
   color: #846F63;
   border: 1px solid #846F63;
-  background-color: transparent;
+  background:transparent;
+ 
 }
 
 .button-content {
@@ -318,6 +317,11 @@ li {
   /* background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); */
   color: #EAEAEA;
   background: #846F63;
+  border: 1px solid #846F63;
+}
+ .active:hover{
+    color: #EAEAEA;
+    background: #846F63 !important;
 }
 
 
@@ -329,10 +333,10 @@ li {
   flex-wrap: wrap;
   /* justify-content: space-between; */
   padding: 2rem 6rem 0rem 6rem;
-  gap: 2rem
+  gap: 2rem;
     /* background-color:rgba(189, 188, 188, 0.08) */
 
-
+justify-content: center;
 
 }
 
@@ -353,19 +357,14 @@ li {
 
 }
 
-.project:hover {
-  /* box-shadow: rgba(0, 0, 0, 0.59) 0px 1px 4px; */
-  border-radius: 25px;
-  /* background-color: white; */
-}
-
 .projects-gallery h2 {
-  padding: 10px 10px 0px 5px;
+  padding: 0px 10px 0px 5px;
   font-size: 26px;
   font-weight: 900;
+  height: 50px;
   letter-spacing: 2px;
   color: #846F63;
-
+  max-width: 300px;
 }
 
 .projects-gallery p {
@@ -398,11 +397,6 @@ li {
 
 }
 
-.odd {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
 /* 
  .projects-gallery img {
@@ -526,6 +520,13 @@ li {
   transition: all 0.2s ease-in-out;
   border-left: 1px solid transparent;
 }
+.form-container .form .input::placeholder,
+.form-container .form .textarea::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /* You can adjust this value as needed */
+  color: #846F63;
+}
 
 .form-container .form .input:focus {
   border-left: 5px solid #846F63;
@@ -577,10 +578,10 @@ li {
 }
 
 
-.form-container .form .input:placeholder,
+/* .form-container .form .input:placeholder,
 .form-container .form .textarea:placeholder {
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 
 .contact-container {
@@ -646,6 +647,7 @@ li {
   font-weight: 400;
   max-width: 900px;
 }
+
 
 .contact-main-container {
   display: flex;
@@ -807,6 +809,7 @@ li {
   border: 1px solid #846F63;
 }
 
+
 .links-single {
   padding: 1rem;
 }
@@ -833,6 +836,36 @@ li {
   height: 220px;
 }
 
+.IMAGE-CONTAINER {
+  position: relative;
+}
+
+.content-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+    height: 300px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+ 
+  
+}
+
+.content-image p a:hover{
+background: transparent;
+color: white;
+border: 1px solid white;
+
+}
+
+.content-image:hover {
+  opacity: 1;
+}
 @media screen and (max-width:1524px) {
 
   .profile-image {
@@ -977,13 +1010,16 @@ li {
   }
 
   .image-container {
-    box-shadow: rgba(0, 0, 0, 0.477) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.477) 0px 1px 4px;
     padding: 0.5rem 2rem;
     border-radius: 25px;
     /* filter: opacity(30%); */
-    height: 5rem;
+    height: 4rem;
     margin: 3px;
     object-fit: contain;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .main-skills-container {
@@ -995,7 +1031,7 @@ li {
 
   .main-skills-container-title h2 {
     text-transform: uppercase;
-    font-size: 49px;
+    font-size: 45px;
     color: #846F63;
   }
 
@@ -1011,7 +1047,7 @@ li {
 
   .projects-titel {
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 45px;
     color: #846F63;
     font-weight: 800;
     margin: 0;
@@ -1032,7 +1068,7 @@ li {
 
   .projects-gallery-mobile h2 {
     padding: 10px 10px 0px 5px;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 900;
     letter-spacing: 2px;
     color: #846F63;
@@ -1047,7 +1083,7 @@ li {
     color: #846F63;
     /* min-height: 172px; */
   }
-
+  
   .contact-main-container {
     display: flex;
     flex-direction: column;
@@ -1069,6 +1105,12 @@ li {
   .contact-details {
     padding-top: 0;
     gap: 0;
+  }
+  .mobile-details-contact{
+  display: none !important;
+  }
+  .contact-details img{
+display: none;
   }
 
   .singleproject-container {

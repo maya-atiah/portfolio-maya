@@ -29,23 +29,14 @@ const ProjectsSection = ({ projectsData }) => {
             </div>
             <div className='projects-gallery'>
                 {projectsData.map((item, index) => (
-                    <div key={item.id} className={`project ${index % 2 === 0 ? "even" : "odd"}`}>
-                        {index % 2 === 0 ? (
-                            <>
+                    <div key={item.id} className='project even'>
+                      
                                 <Image src={item.image} alt={item.title} width={340} height={170} onClick={() => openFullscreenImage(item.image)} />
                                 <h2>{item.title}</h2>
                                 <p>{item.details}</p>
                                 <a className='view-details-projects' onClick={() => showDetailsHandler(item.id)}>View Details</a>
 
-                            </>
-                        ) : (
-                            <>
-                                <h2>{item.title}</h2>
-                                <p>{item.details}</p>
-                                    <a className='view-details-projects' onClick={() => showDetailsHandler(item.id)}>View Details</a>
-                                    <Image src={item.image} alt={item.title} width={340} height={170} onClick={() => openFullscreenImage(item.image)} />
-                            </>
-                        )}
+                          
                         {fullscreenImage && (
                             <div className="fullscreen-overlay" onClick={closeFullscreenImage}>
                                 <div className="fullscreen-image">
@@ -61,10 +52,11 @@ const ProjectsSection = ({ projectsData }) => {
                     <>
                     <div key={item.id} className='projects-gallery-mobile'>
                         
-                        <img src={item.image} alt={item.title} className='projects-image-mobile' width={340} height={170} onClick={() => openFullscreenImage(item.image)} />
+                        
                         <h2>{item.title}</h2>
                         <p>{item.details}</p>
-                        <a className='view-details-projects' onClick={() => showDetailsHandler(item.id)}>View Details</a>
+                            <a className='view-details-projects' onClick={() => showDetailsHandler(item.id)}>View Details</a>
+                            <img src={item.image} alt={item.title} className='projects-image-mobile' width={340} height={170} onClick={() => openFullscreenImage(item.image)} />
                     </div>
                       { fullscreenImage && (
                         <div className="fullscreen-overlay" onClick={closeFullscreenImage}>

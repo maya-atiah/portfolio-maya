@@ -32,7 +32,7 @@ const Scroll = () => {
             style={{ display: showScroll ? "flex" : "none" }}
         >
             <button onClick={scrollTop}>
-                <BsFillArrowUpCircleFill />
+                <BsFillArrowUpCircleFill  className='scrollup-icon'/>
             </button>
         </div>
     );

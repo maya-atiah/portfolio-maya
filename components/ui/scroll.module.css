@@ -8,17 +8,23 @@
     align-items: center;
     justify-content: center;
     width: 40px;
+    background-color: transparent;
     height: 40px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.225);
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.225); */
 }
 
 .scrolltotop button {
     cursor: pointer;
     height: 100%;
     border: none;
+    background-color: transparent;
     /* background-color: #846F63; */
-    color: #ADA996;
+    color: #846F63;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+}
+
+.scrollup-icon{
+    color: #846F63;
 }
