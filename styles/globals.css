@@ -714,14 +714,13 @@ justify-content: center;
 
 /*******about***/
 .about-container {
-  padding: 1rem 6rem 6rem 6rem;
+  padding: 1rem 6rem 6rem;
   display: flex;
   flex-direction: row;
   gap: 4rem;
   align-items: center;
   position: relative;
-
-
+  justify-content: center;
 }
 
 .about-container h1 {
