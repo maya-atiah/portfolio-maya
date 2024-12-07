@@ -27,7 +27,7 @@ const ProjectDetails = (props) => {
         <div className='IMAGE-CONTAINER' >
           <img src={props.data.image} alt={props.image} className='single-image-i' onClick={() => openFullscreenImage(props.data.image)} />
           <div className='content-image'>
-            <p>            {props.data.deployed ? <a href={props.data.deployed} target="_blank">Deployed Link</a> : <a href={props.data.videoDemo} target="_blank">Deployed Link</a>}</p>
+            <p>            {props.data.deployed ? <a href={props.data.deployed} target="_blank">Deployed Link</a> : <a href={props.data.videoDemo} target="_blank">Video Demo</a>}</p>
 
           </div>
         
