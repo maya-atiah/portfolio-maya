@@ -6,23 +6,22 @@ const ExperienceList = () => {
     const experienceData = [
         {
             id: '1',
+            date: 'Sep 23 - Present ',
+            company: 'Creative Technology Solutions',
+            position: 'Frontend Developer'
+        },
+        {
+            id: '2',
             date: 'Nov 2022- Jun 2023',
             company: 'Codi-Tech',
             position: 'Full Stack Web Developer Intern'
         },
         {
-            id: '2',
+            id: '3',
             date: 'April 2022 - Jun 2022',
             company: 'Scoope Of Design',
             position: 'Data Analyst'
         },
-        {
-            id: '3',
-            date: 'Sep 2021- June 2022 ',
-            company: 'LAS School',
-            position: 'Mathematics Teacher'
-        },
-
     ]
     return (
         <>

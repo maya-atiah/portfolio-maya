@@ -18,7 +18,7 @@ const projectsData = [
         details: 'E-commerce website built with MERN Stack',
         image: '/stepUp.png',
         imageArray: ['/cart.png', '/dashboard.png', '/login.png'],
-        deployed: 'https://ecom.khankanko.com/',
+        // deployed: 'https://ecom.khankanko.com/',
         videoDemo: 'https://drive.google.com/file/d/1ZsNs2fpIsYqQhqL3S2g-bK30hHnpEGVB/view?usp=drive_link',
         moreDetails: ' StepUp is a dynamic e-commerce website developed using the MERN stack. It offers a diverse selection of categories, each housing a wide range of products with various sizes, colors, and quantities. Customers can easily browse and search for their preferred shoes, adding them to their cart. To complete the order, a simple registration process is required. The admin, accessible through authorized login, manages the platform. This includes overseeing orders, updating product details, and enhancing site descriptions. StepUp ensures a user-friendly shopping experience and efficient order management, making it a seamless hub for online shopping.'
 
@@ -50,8 +50,8 @@ const projectsData = [
         details: 'Atlier website built with Wordpress',
         image: '/machghlnahome.png',
         imageArray: ['/machghlnaabout.png', '/categories.png', '/contactmachghalna.png'],
-        deployed: 'https://group12.codi-wordpress.com/b09-group12/',
-        videoDemo:'https://drive.google.com/file/d/10sVv5kkZk4Vy4mZ9HnlfuaV9BQ8GFhqW/view?usp=sharing',
+        // deployed: 'https://group12.codi-wordpress.com/b09-group12/',
+        // videoDemo:'https://drive.google.com/file/d/10sVv5kkZk4Vy4mZ9HnlfuaV9BQ8GFhqW/view?usp=sharing',
         moreDetails: '"Machghalna" is an atelier website created for our client, showcasing her designs and dresses. The website is built with WordPress and consists of various sections including contact, categories (shop), and an about me page.'
 
     },

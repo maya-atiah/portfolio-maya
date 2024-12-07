@@ -15,12 +15,7 @@ const EducationList = () => {
             company: 'Lebanese University',
             position: 'License in Applied Mathematics:Statistics'
         },
-        {
-            id: '3',
-            date: 'June 2018',
-            company: 'RAHOSS',
-            position: 'General Science'
-        },
+    
 
     ]
     return (
