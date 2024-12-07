@@ -27,7 +27,7 @@ const Home = () => {
           <div className='home-container-details' >
               <div> Hello, my name is</div>
               <div> Maya Atiah</div>
-              <div>  I'm a <span>Full Stack Web Developer </span>based in Lebanon. I specialize in turning ideas into fully functional web applications that not only look stunning but also deliver exceptional performance and user satisfaction</div>
+              <div>  I'm a <span>Full Stack Web Developer </span>based in Lebanon. I excel at managing projects from concept to deployment, ensuring precision, efficiency, and exceptional results. With a strong focus on user-centric design and innovative problem-solving, I deliver web applications that are both visually compelling and highly functional.</div>
               <button className="cv" onClick={saveFile}>
                   Download CV
               </button> 
